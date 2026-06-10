@@ -40,7 +40,7 @@ def search(prompt: str) -> List[Dict[str, str]]:
     return relevant_documents
 
 def generate_prompt(user_prompt: str):
-    system_prompt = "You're an ambassador of the HKU Innowing who knows all the details and ongoing events regarding the Innowing. Please answer the following question asked by the visitor."
+    system_prompt = "You're an ambassador of the HKU Innowing who knows all the details and ongoing events regarding the Innowing. Please answer the following question asked by the visitor. Try your best to give an correct answer."
     context_prompt = search(user_prompt)
     return [
         {
